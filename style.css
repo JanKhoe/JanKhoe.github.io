@@ -86,8 +86,10 @@ body > div{
 }
 
 #About{
-  margin-top: 76px;
+  
   display: block;
+  padding-top: 100px;
+  margin-top: -70px;
 }
 
 p{
@@ -105,6 +107,10 @@ p{
 
 #ProjectWrapper{
   text-align: center;
+  margin-top: 36px;
+  padding-top: 100px;
+  margin-top: -100px;
+
 }
 
 .test{
@@ -119,9 +125,11 @@ p{
   overflow: hidden;
   
 }
+a{
+  text-decoration: none;
+}
 
 .ProjImg{
-  background-image: url("imgs/SpotifyStatusDisplay.png");
   background-size:  cover;
   background-position: center center;
   width: 100%;
@@ -131,8 +139,25 @@ p{
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-start;
+  cursor: pointer;
 }
 
+#Impermanence{
+  background-image: url("imgs/Impermanence.png");
+}
+
+#PlantedPlanet{
+  background-image: url("imgs/PlantedPlanet.png");
+}
+
+#Dreamscapes{
+  background-image: url("imgs/Dreamscapes.png");
+}
+
+
+#SpotifyGroupListener{
+  background-image: url("imgs/SpotifyStatusDisplay.png");
+}
 .ProjImg:hover{
   transform: scale(1.1, 1.1);
   box-shadow: none;
@@ -152,8 +177,96 @@ p{
 }
 
 #Contact{
-  margin-top: 36px;
+  margin-top: -40px;
   width: 90%;
-  height: 800px;
-  background-color: darkgray;
+  height: 400px;
+  padding-top: 100px;
+  text-align: center;
+  /* background-color: darkgray; */
+}
+
+#ContactInfo{
+  display: grid;
+  grid-template-columns: 28% 24%;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.icons{
+  width: 36px;
+  height: 36px;
+  margin: auto;
+  margin-bottom: 12px;
+  z-index: 100;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#Email{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#Phone{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.footer{
+  margin-bottom: -24px;
+}
+
+.wave{
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg");
+  background-size: 1000px 150px;
+  height: 150px;
+  position: absolute;
+  width: 100%;
+  margin-left: -36px;
+}
+
+#wave2{
+  background-position: 458px;
+  opacity: 0.5;
+}
+
+.socials{
+  padding-top: 100px;
+  margin-top: -100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.SocialIcons{
+  width: 36px;
+  height: 36px;
+  margin-bottom: 12px;
+  z-index: 100;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  margin-left: 12px;
+  top: 6px;
+  transition: all ease-in 0.3s;
+}
+
+.socialLabel{
+  position: relative;
+  z-index: 100;
+  background-color: unset;
+  font-size: 18px;
+  margin-left: -86px;
+  margin-right: -12px;
+  
+}
+
+.SocialIcons:hover{
+  cursor: pointer;
+  opacity: 0.5;
 }
