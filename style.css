@@ -1,0 +1,159 @@
+
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  background-color: #29262c;
+  top: -12px;
+  z-index: 1;
+}
+
+.nav{
+  margin-left: 24px;
+  text-decoration: none;
+  background-color: inherit;
+}
+
+#navbar *:first-child{
+  margin-left: 0px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+}
+
+li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  position: relative;
+  background-color: inherit;
+}
+
+.nav {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.nav:hover {
+  color: grey;
+  
+}
+
+.nav::after {  
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #03DAC6;
+
+  position: absolute;
+  top: 42px;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+.nav:hover::after{
+  height: 5px;
+  width: 100%; 
+}
+
+body > div{
+  margin-left: 26px;
+  
+}
+
+#About{
+  margin-top: 76px;
+  display: block;
+}
+
+p{
+  color: white;
+  
+}
+
+.Projects{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  row-gap: 12px;
+  justify-content: center;
+  
+}
+
+#ProjectWrapper{
+  text-align: center;
+}
+
+.test{
+  width: 100px;
+  height: 100px;
+  background-color: white;
+}
+
+.Project{
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  
+}
+
+.ProjImg{
+  background-image: url("imgs/SpotifyStatusDisplay.png");
+  background-size:  cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 15em rgba(0, 0, 0, 0.8);
+  transition: ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+}
+
+.ProjImg:hover{
+  transform: scale(1.1, 1.1);
+  box-shadow: none;
+}
+  
+.TitleSpan {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.Description{
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  
+}
+
+#Contact{
+  margin-top: 36px;
+  width: 90%;
+  height: 800px;
+  background-color: darkgray;
+}
