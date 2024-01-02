@@ -87,14 +87,22 @@ body > div{
 
 #About{
   
-  display: block;
+  display: flex;
   padding-top: 100px;
   margin-top: -70px;
+  align-items: center;
+  justify-content: center;
+}
+
+.center{
+  width: 40%;
+
 }
 
 p{
   color: white;
-  
+  word-spacing: 1.5px;
+  line-height: 1.5em;
 }
 
 .Projects{
@@ -109,9 +117,9 @@ p{
   text-align: center;
   margin-top: 36px;
   padding-top: 100px;
-  margin-top: -100px;
-
+  margin-top: -50px;
 }
+
 
 .test{
   width: 100px;
@@ -123,6 +131,7 @@ p{
   width: 350px;
   height: 350px;
   overflow: hidden;
+  user-select: none;
   
 }
 a{
@@ -154,9 +163,16 @@ a{
   background-image: url("imgs/Dreamscapes.png");
 }
 
+#overcrow{
+  background-image: url("imgs/overcrowdead.png");
+}
 
 #SpotifyGroupListener{
   background-image: url("imgs/SpotifyStatusDisplay.png");
+}
+
+#ArtGallery{
+  background-image: url("imgs/ArtGallery.png");
 }
 .ProjImg:hover{
   transform: scale(1.1, 1.1);
